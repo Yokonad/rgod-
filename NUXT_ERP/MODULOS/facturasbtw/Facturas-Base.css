@@ -1,0 +1,832 @@
+/* ============================================
+   MÓDULO FACTURAS - ESTILOS ESPECÍFICOS
+   Layout y componentes únicos del módulo
+   ============================================ */
+
+/* ============================================
+   LAYOUT PRINCIPAL
+   ============================================ */
+.facturas-layout {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.animated-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-light);
+  z-index: 0;
+  transition: background-color 0.3s ease;
+}
+
+.facturas-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: transparent;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  z-index: 10;
+  transition: var(--transition);
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+.module-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-left h1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-dark);
+  letter-spacing: 0.5px;
+  transition: var(--transition);
+}
+
+.title-icon {
+  width: 36px;
+  height: 36px;
+  transition: filter 0.3s ease;
+}
+
+body.dark-mode .title-icon {
+  filter: brightness(0) invert(1);
+}
+
+.btn-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: var(--color-primary);
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-back:hover {
+  background: var(--color-primary-dark);
+}
+
+.btn-back:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-back svg {
+  width: 20px;
+  height: 20px;
+  stroke: white;
+}
+
+/* ============================================
+   CONTENIDO PRINCIPAL
+   ============================================ */
+.module-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 10px;
+}
+
+.module-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.module-content::-webkit-scrollbar-track {
+  background: rgba(236, 21, 21, 0.897);
+  border-radius: 10px;
+}
+
+.module-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.module-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* ============================================
+   TARJETAS DE ESTADÍSTICAS
+   ============================================ */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: var(--bg-white);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  gap: 20px;
+  transition: var(--transition-slow);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.stat-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary-light);
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.stat-icon svg,
+.stat-icon img {
+  width: 36px;
+  height: 36px;
+  filter: brightness(0) invert(1);
+}
+
+.stat-content {
+  flex: 1;
+}
+
+.stat-content h3 {
+  font-size: 16px;
+  color: var(--text-gray);
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.stat-amount {
+  font-size: 14px;
+  color: var(--color-success);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.stat-pending {
+  font-size: 14px;
+  color: var(--color-warning);
+  font-weight: 600;
+}
+
+/* ============================================
+   CONTENEDOR DE FILTROS
+   ============================================ */
+.filters-container {
+  background: var(--bg-white);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 30px;
+  transition: var(--transition);
+}
+
+/* ============================================
+   MODAL
+   ============================================ */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.modal-content {
+  background: var(--bg-white);
+  border-radius: 15px;
+  box-shadow: var(--shadow-lg);
+  width: 90%;
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-content::-webkit-scrollbar {
+  width: 12px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: var(--bg-light);
+  border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 10px;
+  border: 2px solid var(--bg-light);
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-dark);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.modal-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ============================================
+   DARK MODE TOGGLE - BOTÓN CIRCULAR ESTILO DASHBOARD
+   ============================================ */
+.dark-mode-container {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.slider:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: scale(1.05);
+}
+
+.sun-icon,
+.moon-icon {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sun-icon {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+.moon-icon {
+  opacity: 0;
+  transform: rotate(180deg) scale(0.5);
+}
+
+input:checked+.slider {
+  background: rgba(10, 164, 164, 0.3);
+  border-color: rgba(10, 164, 164, 0.6);
+}
+
+input:checked+.slider:hover {
+  border-color: rgba(10, 164, 164, 0.8);
+}
+
+input:checked+.slider .sun-icon {
+  opacity: 0;
+  transform: rotate(-180deg) scale(0.5);
+}
+
+input:checked+.slider .moon-icon {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+/* ============================================
+   OVERRIDES: Texto oscuro, paneles blancos, iconos
+   - Elimina texto gris dentro del módulo
+   - Fuerza paneles blancos incluso en dark mode
+   - Hace que el icono del sol sea negro al entrar al módulo
+   - Mantiene la luna blanca en modo noche
+   ============================================ */
+
+/* Forzar texto oscuro en todo el módulo (sobrescribe clases grises) */
+.facturas-container,
+.facturas-container * {
+  color: var(--text-dark) !important;
+}
+
+/* Asegurar que encabezados, celdas y textos utilitarios sean oscuros */
+.facturas-container th,
+.facturas-container td,
+.facturas-container .stat-content h3,
+.facturas-container p,
+.facturas-container span,
+.facturas-container label,
+.facturas-container input,
+.facturas-container select,
+.facturas-container textarea {
+  color: var(--text-dark) !important;
+}
+
+/* Sobrescribir utilidades Tailwind grises SOLO dentro del módulo */
+.facturas-container .text-gray-500,
+.facturas-container .text-gray-600,
+.facturas-container .text-gray-700,
+.facturas-container .dark\:text-gray-400,
+.facturas-container .text-gray-400 {
+  color: var(--text-dark) !important;
+}
+
+/* Forzar paneles blancos (cards, filtros, modal) dentro del módulo */
+.facturas-container .stat-card,
+.facturas-container .filters-container,
+.facturas-container .modal-content,
+.facturas-container .bg-white,
+.facturas-container .filters-container,
+.facturas-container .facturas-table,
+.facturas-container>.bg-white {
+  background: var(--bg-white) !important;
+  color: var(--text-dark) !important;
+  box-shadow: var(--shadow-md) !important;
+  border: none !important;
+  /* Quitar bordes negros, solo sombras */
+}
+
+/* Incluso en modo oscuro, mantener los paneles blancos y texto oscuro */
+body.dark-mode .facturas-container .stat-card,
+body.dark-mode .facturas-container .filters-container,
+body.dark-mode .facturas-container .modal-content {
+  background: var(--bg-white) !important;
+  color: var(--text-dark) !important;
+  border: none !important;
+}
+
+/* Quitar bordes de la tabla y contenedores con borde */
+.facturas-container .border,
+.facturas-container .border-gray-200,
+.facturas-container .border-gray-700,
+.facturas-container .dark\:border-gray-700,
+.facturas-container table {
+  border: none !important;
+}
+
+/* Header de tabla: color sólido de la empresa */
+.facturas-container thead {
+  background: var(--color-primary) !important;
+}
+
+.facturas-container thead th {
+  color: white !important;
+  font-weight: 700 !important;
+  border: none !important;
+}
+
+/* Iconos: sol negro por defecto, luna blanca en modo noche */
+.facturas-container .sun-icon {
+  filter: brightness(0) !important;
+}
+
+.facturas-container .moon-icon {
+  filter: brightness(0) invert(1) !important;
+}
+
+/* Asegurarnos que la visibilidad/opacidad siga funcionando con las transiciones existentes */
+.facturas-container .sun-icon,
+.facturas-container .moon-icon {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============================================
+   BOTÓN NUEVA FACTURA
+   ============================================ */
+.btn-nueva-factura {
+  background: var(--color-primary) !important;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(10, 164, 164, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-nueva-factura:hover {
+  background: var(--color-primary-dark) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(10, 164, 164, 0.4);
+}
+
+/* ============================================
+   BOTÓN FILTRAR
+   ============================================ */
+.btn-filtrar {
+  background: var(--color-primary) !important;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(10, 164, 164, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-filtrar:hover {
+  background: var(--color-primary-dark) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(10, 164, 164, 0.4);
+}
+
+/* ============================================
+   BOTÓN LIMPIAR - USA COLORES DE EJE-THEME.CSS
+   ============================================ */
+.btn-limpiar {
+  background: var(--color-limpiar-facturas) !important;
+  color: var(--color-texto-limpiar-facturas) !important;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(252, 165, 165, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-limpiar:hover {
+  background: var(--color-limpiar-hover-facturas) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(248, 113, 113, 0.4);
+}
+
+body.dark-mode .btn-limpiar {
+  background: var(--color-limpiar-hover-facturas) !important;
+  color: white !important;
+}
+
+body.dark-mode .btn-limpiar:hover {
+  background: var(--color-eliminar-facturas) !important;
+}
+
+/* ============================================
+   INPUTS DEL MODAL: GRIS CLARO EN DÍA, OSCURO EN NOCHE
+   ============================================ */
+.label-modal {
+  color: var(--text-dark) !important;
+  /* Texto oscuro/negro en modo día */
+  font-weight: 600;
+}
+
+body.dark-mode .label-modal {
+  color: white !important;
+  /* Texto blanco en modo noche */
+}
+
+.input-modal {
+  background: #f3f4f6 !important;
+  /* Gris CLARO en modo día */
+  color: var(--text-dark) !important;
+  border: 1px solid #d1d5db !important;
+}
+
+body.dark-mode .input-modal {
+  background: #374151 !important;
+  /* Gris oscuro en modo noche */
+  color: white !important;
+  border: 1px solid #4b5563 !important;
+}
+
+/* Eliminar reglas antiguas redundantes */
+.facturas-container input:not([type="checkbox"]):not([type="radio"]):not(.input-total):not(.input-modal),
+.facturas-container textarea:not(.input-modal),
+.facturas-container select:not(.input-modal) {
+  background: #f3f4f6 !important;
+  color: var(--text-dark) !important;
+  border: 1px solid #d1d5db !important;
+}
+
+body.dark-mode .facturas-container input:not([type="checkbox"]):not([type="radio"]):not(.input-total):not(.input-modal),
+body.dark-mode .facturas-container textarea:not(.input-modal),
+body.dark-mode .facturas-container select:not(.input-modal) {
+  background: #374151 !important;
+  color: white !important;
+  border: 1px solid #4b5563 !important;
+}
+
+/* ============================================
+   CAMPO TOTAL: MISMO COLOR EN DÍA Y NOCHE
+   ============================================ */
+.facturas-container .input-total {
+  background: #e5e7eb !important;
+  /* Gris medio consistente */
+  color: #1e293b !important;
+  /* Texto OSCURO siempre visible */
+  font-weight: 700;
+  border: 1px solid #d1d5db !important;
+  cursor: not-allowed;
+}
+
+body.dark-mode .facturas-container .input-total {
+  background: #e5e7eb !important;
+  /* Mismo gris medio en modo noche */
+  color: #1e293b !important;
+  /* Texto OSCURO también en noche para contraste */
+}
+
+/* ============================================
+   SVG ICONS: NEGRO EN DÍA, BLANCO EN NOCHE
+   Excepto sol/luna que ya tienen su propia lógica
+   ============================================ */
+.facturas-container svg:not(.sun-icon):not(.moon-icon) {
+  color: var(--text-dark) !important;
+  stroke: var(--text-dark) !important;
+}
+
+body.dark-mode .facturas-container svg:not(.sun-icon):not(.moon-icon) {
+  color: white !important;
+  stroke: white !important;
+}
+
+/* ============================================
+   HOVER DE FILAS - USANDO VARIABLES
+   ============================================ */
+.facturas-container tbody tr:hover {
+  background: var(--hover-fila-facturas) !important;
+}
+
+body.dark-mode .facturas-container tbody tr:hover {
+  background: var(--hover-fila-facturas-dark) !important;
+}
+
+/* ============================================
+   BADGES DE TIPO DE FACTURA
+   ============================================ */
+.facturas-container .badge-tipo-emitida {
+  background: var(--badge-emitida-bg-facturas) !important;
+  color: var(--badge-emitida-text-facturas) !important;
+}
+
+body.dark-mode .facturas-container .badge-tipo-emitida {
+  background: var(--badge-emitida-bg-dark-facturas) !important;
+  color: var(--badge-emitida-text-dark-facturas) !important;
+}
+
+.facturas-container .badge-tipo-recibida {
+  background: var(--badge-recibida-bg-facturas) !important;
+  color: var(--badge-recibida-text-facturas) !important;
+}
+
+body.dark-mode .facturas-container .badge-tipo-recibida {
+  background: var(--badge-recibida-bg-dark-facturas) !important;
+  color: var(--badge-recibida-text-dark-facturas) !important;
+}
+
+/* ============================================
+   BADGES DE ESTADO
+   ============================================ */
+.facturas-container .badge-estado-pendiente {
+  background: var(--badge-pendiente-bg-facturas) !important;
+  color: var(--badge-pendiente-text-facturas) !important;
+}
+
+body.dark-mode .facturas-container .badge-estado-pendiente {
+  background: var(--badge-pendiente-bg-dark-facturas) !important;
+  color: var(--badge-pendiente-text-dark-facturas) !important;
+}
+
+.facturas-container .badge-estado-pagada {
+  background: var(--badge-pagada-bg-facturas) !important;
+  color: var(--badge-pagada-text-facturas) !important;
+}
+
+body.dark-mode .facturas-container .badge-estado-pagada {
+  background: var(--badge-pagada-bg-dark-facturas) !important;
+  color: var(--badge-pagada-text-dark-facturas) !important;
+}
+
+.facturas-container .badge-estado-cancelada {
+  background: var(--badge-cancelada-bg-facturas) !important;
+  color: var(--badge-cancelada-text-facturas) !important;
+}
+
+body.dark-mode .facturas-container .badge-estado-cancelada {
+  background: var(--badge-cancelada-bg-dark-facturas) !important;
+  color: var(--badge-cancelada-text-dark-facturas) !important;
+}
+
+.facturas-container .badge-estado-vencida {
+  background: var(--badge-vencida-bg-facturas) !important;
+  color: var(--badge-vencida-text-facturas) !important;
+}
+
+body.dark-mode .facturas-container .badge-estado-vencida {
+  background: var(--badge-vencida-bg-dark-facturas) !important;
+  color: var(--badge-vencida-text-dark-facturas) !important;
+}
+
+/* ============================================
+   BOTONES DE ACCIÓN (EDITAR/ELIMINAR)
+   ============================================ */
+.facturas-container .btn-accion-editar {
+  color: var(--accion-editar-facturas) !important;
+}
+
+.facturas-container .btn-accion-editar:hover {
+  color: var(--accion-editar-hover-facturas) !important;
+  background: var(--accion-editar-bg-hover-facturas) !important;
+}
+
+body.dark-mode .facturas-container .btn-accion-editar {
+  color: var(--accion-editar-facturas-dark) !important;
+}
+
+body.dark-mode .facturas-container .btn-accion-editar:hover {
+  color: var(--accion-editar-hover-facturas-dark) !important;
+  background: var(--accion-editar-bg-hover-facturas-dark) !important;
+}
+
+.facturas-container .btn-accion-eliminar {
+  color: var(--accion-eliminar-facturas) !important;
+}
+
+.facturas-container .btn-accion-eliminar:hover {
+  color: var(--accion-eliminar-hover-facturas) !important;
+  background: var(--accion-eliminar-bg-hover-facturas) !important;
+}
+
+body.dark-mode .facturas-container .btn-accion-eliminar {
+  color: var(--accion-eliminar-facturas-dark) !important;
+}
+
+body.dark-mode .facturas-container .btn-accion-eliminar:hover {
+  color: var(--accion-eliminar-hover-facturas-dark) !important;
+  background: var(--accion-eliminar-bg-hover-facturas-dark) !important;
+}
+
+/* ============================================
+   MODAL - BOTÓN CERRAR
+   ============================================ */
+.facturas-container .modal-close-btn:hover {
+  background: var(--modal-close-hover-facturas) !important;
+}
+
+body.dark-mode .facturas-container .modal-close-btn:hover {
+  background: var(--modal-close-hover-facturas-dark) !important;
+}
+
+.facturas-container .modal-close-btn svg {
+  color: var(--modal-close-icon-facturas) !important;
+}
+
+/* ============================================
+   MODAL - BOTONES CANCELAR Y GUARDAR
+   ============================================ */
+.facturas-container .modal-btn-cancelar {
+  background: var(--modal-btn-cancelar-facturas) !important;
+  color: var(--modal-btn-cancelar-text-facturas) !important;
+}
+
+.facturas-container .modal-btn-cancelar:hover {
+  background: var(--modal-btn-cancelar-hover-facturas) !important;
+}
+
+body.dark-mode .facturas-container .modal-btn-cancelar {
+  background: var(--modal-btn-cancelar-facturas-dark) !important;
+  color: var(--modal-btn-cancelar-text-facturas-dark) !important;
+}
+
+body.dark-mode .facturas-container .modal-btn-cancelar:hover {
+  background: var(--modal-btn-cancelar-hover-facturas-dark) !important;
+}
+
+.facturas-container .modal-btn-guardar {
+  background: var(--modal-btn-guardar-facturas) !important;
+  color: var(--modal-btn-guardar-text-facturas) !important;
+}
+
+.facturas-container .modal-btn-guardar:hover {
+  background: var(--modal-btn-guardar-hover-facturas) !important;
+}
+
+/* ============================================
+   INPUTS, SELECTS, TEXTAREAS
+   ============================================ */
+.facturas-container .input-modal,
+.facturas-container input:not([type="checkbox"]):not([type="radio"]):not(.input-total),
+.facturas-container textarea,
+.facturas-container select {
+  background: var(--input-bg-facturas) !important;
+  color: var(--input-text-facturas) !important;
+  border: 1px solid var(--input-border-facturas) !important;
+}
+
+.facturas-container .input-modal:focus,
+.facturas-container input:focus,
+.facturas-container textarea:focus,
+.facturas-container select:focus {
+  border-color: var(--input-focus-ring-facturas) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+}
+
+body.dark-mode .facturas-container .input-modal,
+body.dark-mode .facturas-container input:not([type="checkbox"]):not([type="radio"]):not(.input-total),
+body.dark-mode .facturas-container textarea,
+body.dark-mode .facturas-container select {
+  background: var(--input-bg-dark-facturas) !important;
+  color: var(--input-text-dark-facturas) !important;
+  border: 1px solid var(--input-border-dark-facturas) !important;
+}
+
+/* ============================================
+   LABELS
+   ============================================ */
+.facturas-container .label-modal,
+.facturas-container label {
+  color: var(--label-text-facturas) !important;
+}
+
+body.dark-mode .facturas-container .label-modal,
+body.dark-mode .facturas-container label {
+  color: var(--label-text-dark-facturas) !important;
+}
+
+/* ============================================
+   DIVISORES
+   ============================================ */
+.facturas-container .divide-y>* {
+  border-color: var(--divider-facturas) !important;
+}
+
+body.dark-mode .facturas-container .divide-y>* {
+  border-color: var(--divider-dark-facturas) !important;
+}

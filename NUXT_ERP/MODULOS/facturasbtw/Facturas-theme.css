@@ -1,0 +1,101 @@
+/* ============================================
+   TEMA ESPECÍFICO DEL MÓDULO FACTURAS
+   Colores y variables visuales propias del módulo
+   ============================================ */
+
+:root {
+    /* Colores Específicos del Módulo de Facturas */
+    --color-eliminar-facturas: #ef4444;
+    /* Rojo para botón eliminar */
+    --color-limpiar-facturas: #ef4444;
+    /* Rojo pastel para botón limpiar */
+    --color-limpiar-hover-facturas: #cc2a2a;
+    /* Rojo pastel hover */
+    --color-texto-limpiar-facturas: #7f1d1d;
+    /* Texto rojo oscuro */
+
+    /* Hover de Filas */
+    --hover-fila-facturas: rgba(14, 165, 233, 0.1);
+    /* Celeste transparente */
+    --hover-fila-facturas-dark: #374151;
+    /* Gris oscuro para modo oscuro */
+
+    /* Badges - Tipo de Factura */
+    --badge-emitida-bg-facturas: #dbeafe;
+    --badge-emitida-text-facturas: #1e40af;
+    --badge-emitida-bg-dark-facturas: #1e3a8a;
+    --badge-emitida-text-dark-facturas: #bfdbfe;
+
+    --badge-recibida-bg-facturas: #e9d5ff;
+    --badge-recibida-text-facturas: #6b21a8;
+    --badge-recibida-bg-dark-facturas: #581c87;
+    --badge-recibida-text-dark-facturas: #e9d5ff;
+
+    /* Badges - Estados */
+    --badge-pendiente-bg-facturas: #fef3c7;
+    --badge-pendiente-text-facturas: #92400e;
+    --badge-pendiente-bg-dark-facturas: #78350f;
+    --badge-pendiente-text-dark-facturas: #fde68a;
+
+    --badge-pagada-bg-facturas: #d1fae5;
+    --badge-pagada-text-facturas: #065f46;
+    --badge-pagada-bg-dark-facturas: #064e3b;
+    --badge-pagada-text-dark-facturas: #a7f3d0;
+
+    --badge-cancelada-bg-facturas: #fee2e2;
+    --badge-cancelada-text-facturas: #991b1b;
+    --badge-cancelada-bg-dark-facturas: #7f1d1d;
+    --badge-cancelada-text-dark-facturas: #fecaca;
+
+    --badge-vencida-bg-facturas: #ffe4e6;
+    --badge-vencida-text-facturas: #9f1239;
+    --badge-vencida-bg-dark-facturas: #881337;
+    --badge-vencida-text-dark-facturas: #fecdd3;
+
+    /* Botones de Acción (Editar/Eliminar) */
+    --accion-editar-facturas: #2563eb;
+    --accion-editar-hover-facturas: #1d4ed8;
+    --accion-editar-bg-hover-facturas: rgba(37, 99, 235, 0.1);
+    --accion-editar-facturas-dark: #60a5fa;
+    --accion-editar-hover-facturas-dark: #93c5fd;
+    --accion-editar-bg-hover-facturas-dark: rgba(37, 99, 235, 0.2);
+
+    --accion-eliminar-facturas: #dc2626;
+    --accion-eliminar-hover-facturas: #b91c1c;
+    --accion-eliminar-bg-hover-facturas: rgba(220, 38, 38, 0.1);
+    --accion-eliminar-facturas-dark: #f87171;
+    --accion-eliminar-hover-facturas-dark: #fca5a5;
+    --accion-eliminar-bg-hover-facturas-dark: rgba(220, 38, 38, 0.2);
+
+    /* Modal */
+    --modal-close-hover-facturas: #f3f4f6;
+    --modal-close-hover-facturas-dark: #374151;
+    --modal-close-icon-facturas: #6b7280;
+
+    --modal-btn-cancelar-facturas: #d1d5db;
+    --modal-btn-cancelar-hover-facturas: #9ca3af;
+    --modal-btn-cancelar-text-facturas: #374151;
+    --modal-btn-cancelar-facturas-dark: #4b5563;
+    --modal-btn-cancelar-hover-facturas-dark: #6b7280;
+    --modal-btn-cancelar-text-facturas-dark: #ffffff;
+
+    --modal-btn-guardar-facturas: #2563eb;
+    --modal-btn-guardar-hover-facturas: #1d4ed8;
+    --modal-btn-guardar-text-facturas: #ffffff;
+
+    /* Inputs y Labels */
+    --input-border-facturas: #d1d5db;
+    --input-border-dark-facturas: #4b5563;
+    --input-bg-facturas: #ffffff;
+    --input-bg-dark-facturas: #374151;
+    --input-text-facturas: #111827;
+    --input-text-dark-facturas: #ffffff;
+    --input-focus-ring-facturas: #3b82f6;
+
+    --label-text-facturas: #374151;
+    --label-text-dark-facturas: #d1d5db;
+
+    /* Divisores */
+    --divider-facturas: #e5e7eb;
+    --divider-dark-facturas: #374151;
+}

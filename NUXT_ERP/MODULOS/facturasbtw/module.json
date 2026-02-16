@@ -1,0 +1,12 @@
+{
+  "id": "facturasbtw",
+  "name": "FACTURAS",
+  "description": "Sistema completo de gestión de facturación. Administra facturas emitidas y recibidas, con cálculo automático de impuestos (IVA), estados de pago y estadísticas financieras.",
+  "version": "2.1.0",
+  "author": "LoonBac21 - Insent1208",
+  "icon": "invoice",
+  "gradient": "rgba(217, 63, 39, 1)",
+  "access_level": "user",
+  "enabled": false,
+  "route": "/modules/facturasbtw"
+}

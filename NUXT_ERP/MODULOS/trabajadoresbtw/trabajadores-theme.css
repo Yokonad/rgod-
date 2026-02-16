@@ -1,0 +1,77 @@
+/* ============================================
+   TEMA LOCAL: MÓDULO TRABAJADORES
+   Variables específicas desacopladas del global
+   ============================================ */
+
+:root {
+  /* Colores Específicos del Módulo de Trabajadores */
+  --stat-icon-bg-total-trabajadores: #6366f1; /* Indigo Solid */
+  --stat-icon-bg-activos-trabajadores: #10b981; /* Emerald Solid */
+  --stat-icon-bg-inactivos-trabajadores: #ef4444; /* Red Solid */
+
+  /* Inputs y Elementos de Formulario */
+  --input-bg-trabajadores: #ffffff;
+  --input-bg-dark-trabajadores: #374151;
+  --input-text-trabajadores: #111827;
+  --input-text-dark-trabajadores: #ffffff;
+  --input-border-trabajadores: #d1d5db;
+  --input-border-dark-trabajadores: #4b5563;
+  --input-focus-ring-trabajadores: #0AA4A4;
+
+  /* Botones */
+  --btn-restaurar-bg-trabajadores: #f9fafb;
+  --btn-restaurar-border-trabajadores: #e5e7eb;
+  --btn-restaurar-text-trabajadores: #4b5563;
+  --btn-restaurar-hover-trabajadores: #f3f4f6;
+
+  --btn-restaurar-bg-dark-trabajadores: #374151;
+  --btn-restaurar-border-dark-trabajadores: #4b5563;
+  --btn-restaurar-text-dark-trabajadores: #ffffff;
+  --btn-restaurar-hover-dark-trabajadores: #4b5563;
+
+  --hover-fila-trabajadores: rgba(10, 164, 164, 0.05);
+
+  /* Badges - Estados Trabajadores */
+  --badge-activo-bg-trabajadores: #d1fae5;
+  --badge-activo-text-trabajadores: #065f46;
+  --badge-activo-bg-dark-trabajadores: #064e3b;
+  --badge-activo-text-dark-trabajadores: #a7f3d0;
+
+  --badge-cesado-bg-trabajadores: #fee2e2;
+  --badge-cesado-text-trabajadores: #991b1b;
+  --badge-cesado-bg-dark-trabajadores: #7f1d1d;
+  --badge-cesado-text-dark-trabajadores: #fecaca;
+
+  --badge-inactivo-bg-trabajadores: #f3f4f6;
+  --badge-inactivo-text-trabajadores: #374151;
+  --badge-inactivo-bg-dark-trabajadores: #374151;
+  --badge-inactivo-text-dark-trabajadores: #d1d5db;
+
+  --badge-vacaciones-bg-trabajadores: #dbeafe;
+  --badge-vacaciones-text-trabajadores: #1e40af;
+  --badge-vacaciones-bg-dark-trabajadores: #1e3a8a;
+  --badge-vacaciones-text-dark-trabajadores: #bfdbfe;
+
+  --badge-licencia-bg-trabajadores: #f3e8ff;
+  --badge-licencia-text-trabajadores: #6b21a8;
+  --badge-licencia-bg-dark-trabajadores: #581c87;
+  --badge-licencia-text-dark-trabajadores: #e9d5ff;
+
+  /* Import Section */
+  --step-number-bg-trabajadores: #6366f1; /* Indigo Solid */
+  --step-number-text-trabajadores: #ffffff;
+
+  --btn-download-bg-trabajadores: #8b5cf6; /* Violet Solid */
+  --btn-download-hover-trabajadores: #7c3aed;
+
+  --btn-import-bg-trabajadores: #0AA4A4; /* Teal Solid */
+  --btn-import-hover-trabajadores: #087A7A;
+
+  --upload-area-bg-trabajadores: #f9fafb;
+  --upload-area-border-trabajadores: #d1d5db;
+  --upload-area-bg-hover-trabajadores: #f3f4f6;
+
+  --upload-area-bg-dark-trabajadores: #1f2937;
+  --upload-area-border-dark-trabajadores: #374151;
+  --upload-area-bg-hover-dark-trabajadores: #374151;
+}

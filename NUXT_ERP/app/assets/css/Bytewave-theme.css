@@ -1,0 +1,392 @@
+/* ============================================
+   BYTEWAVE ERP - TEMA GLOBAL
+   Colores corporativos y variables compartidas
+   ============================================ */
+
+:root {
+  /* Colores Corporativos EJE Soluciones */
+  --color-primary: #0AA4A4;
+  --color-primary-light: #3e87e0;
+  --color-primary-dark: #087A7A;
+  --color-secondary: #08C6B6;
+
+  /* Fondos - Modo Claro */
+  --bg-white: #ffffff;
+  --bg-light: #f8fafc;
+  --bg-gray: #f1f5f9;
+
+  /* Textos - Modo Claro */
+  --text-dark: #1e293b;
+  --text-gray: #64748b;
+  --text-light: #94a3b8;
+
+  /* Colores de Estado */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-info: #3b82f6;
+  --color-accent: #3b82f6;
+
+  /* Colores suaves/soft para backgrounds */
+  --accent-soft: rgba(59, 130, 246, 0.1);
+  --danger-soft: rgba(239, 68, 68, 0.1);
+  --success-soft: rgba(16, 185, 129, 0.1);
+  --warning-soft: rgba(245, 158, 11, 0.1);
+
+  /* Textos mutados */
+  --text-muted: #64748b;
+
+
+
+  /* Bordes y Sombras */
+  --border-color: #e2e8f0;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+  /* Transiciones */
+  --transition-fast: all 0.2s ease;
+  --transition: all 0.3s ease;
+  --transition-slow: all 0.5s ease;
+  /* Colores Específicos del Módulo de Usuarios */
+  --color-eliminar-usuarios: #ef4444;
+  --color-limpiar-usuarios: #ef4444;
+  --color-limpiar-hover-usuarios: #cc2a2a;
+  --color-texto-limpiar-usuarios: #7f1d1d;
+
+  /* Hover de Filas */
+  --hover-fila-usuarios: rgba(14, 165, 233, 0.1);
+  --hover-fila-usuarios-dark: #374151;
+
+  /* Badges - Roles */
+  --badge-admin-bg-usuarios: #f3e8ff;
+  --badge-admin-text-usuarios: #6b21a8;
+  --badge-admin-bg-dark-usuarios: #581c87;
+  --badge-admin-text-dark-usuarios: #e9d5ff;
+
+  --badge-user-bg-usuarios: #dbeafe;
+  --badge-user-text-usuarios: #1e40af;
+  --badge-user-bg-dark-usuarios: #1e3a8a;
+  --badge-user-text-dark-usuarios: #bfdbfe;
+
+  /* Badges - Estados */
+  --badge-activo-bg-usuarios: #d1fae5;
+  --badge-activo-text-usuarios: #065f46;
+  --badge-activo-bg-dark-usuarios: #064e3b;
+  --badge-activo-text-dark-usuarios: #a7f3d0;
+
+  --badge-inactivo-bg-usuarios: #f3f4f6;
+  --badge-inactivo-text-usuarios: #374151;
+  --badge-inactivo-bg-dark-usuarios: #374151;
+  --badge-inactivo-text-dark-usuarios: #d1d5db;
+
+  /* Botones de Acción */
+  --accion-eliminar-usuarios: #dc2626;
+  --accion-eliminar-hover-usuarios: #b91c1c;
+  --accion-eliminar-bg-hover-usuarios: rgba(220, 38, 38, 0.1);
+  --accion-eliminar-usuarios-dark: #f87171;
+  --accion-eliminar-hover-usuarios-dark: #fca5a5;
+  --accion-eliminar-bg-hover-usuarios-dark: rgba(220, 38, 38, 0.2);
+
+  /* Modal */
+  --modal-close-hover-usuarios: #f3f4f6;
+  --modal-close-hover-usuarios-dark: #374151;
+  --modal-close-icon-usuarios: #6b7280;
+
+  --modal-btn-cancelar-usuarios: #d1d5db;
+  --modal-btn-cancelar-hover-usuarios: #9ca3af;
+  --modal-btn-cancelar-text-usuarios: #374151;
+  --modal-btn-cancelar-usuarios-dark: #4b5563;
+  --modal-btn-cancelar-hover-usuarios-dark: #6b7280;
+  --modal-btn-cancelar-text-usuarios-dark: #ffffff;
+
+  --modal-btn-guardar-usuarios: #2563eb;
+  --modal-btn-guardar-hover-usuarios: #1d4ed8;
+  --modal-btn-guardar-text-usuarios: #ffffff;
+
+  /* Inputs y Labels */
+  --input-border-usuarios: #d1d5db;
+  --input-border-dark-usuarios: #4b5563;
+  --input-bg-usuarios: #ffffff;
+  --input-bg-dark-usuarios: #374151;
+  --input-text-usuarios: #111827;
+  --input-text-dark-usuarios: #ffffff;
+  --input-focus-ring-usuarios: #3b82f6;
+
+  --label-text-usuarios: #374151;
+  --label-text-dark-usuarios: #d1d5db;
+
+  /* Divisores */
+  --divider-usuarios: #e5e7eb;
+  --divider-dark-usuarios: #374151;
+  /* Colores Específicos del Módulo de Proyectos */
+  --color-eliminar-proyectos: #ef4444;
+  --color-ver-proyectos: #0AA4A4;
+  --color-ver-hover-proyectos: #087A7A;
+
+  /* Badges - Estados de Proyecto */
+  --badge-active-bg-proyectos: #d1fae5;
+  --badge-active-text-proyectos: #065f46;
+  --badge-active-bg-dark-proyectos: #064e3b;
+  --badge-active-text-dark-proyectos: #a7f3d0;
+
+  --badge-completed-bg-proyectos: #dbeafe;
+  --badge-completed-text-proyectos: #1e40af;
+  --badge-completed-bg-dark-proyectos: #1e3a8a;
+  --badge-completed-text-dark-proyectos: #bfdbfe;
+
+  --badge-paused-bg-proyectos: #fef3c7;
+  --badge-paused-text-proyectos: #92400e;
+  --badge-paused-bg-dark-proyectos: #78350f;
+  --badge-paused-text-dark-proyectos: #fde68a;
+
+  --badge-cancelled-bg-proyectos: #fee2e2;
+  --badge-cancelled-text-proyectos: #991b1b;
+  --badge-cancelled-bg-dark-proyectos: #7f1d1d;
+  --badge-cancelled-text-dark-proyectos: #fecaca;
+
+  /* Botones de Acción */
+  --accion-ver-proyectos: #0AA4A4;
+  --accion-ver-hover-proyectos: #087A7A;
+  --accion-ver-bg-hover-proyectos: rgba(10, 164, 164, 0.1);
+  --accion-ver-proyectos-dark: #2dd4bf;
+  --accion-ver-hover-proyectos-dark: #5eead4;
+  --accion-ver-bg-hover-proyectos-dark: rgba(45, 212, 191, 0.2);
+
+  --accion-eliminar-proyectos: #dc2626;
+  --accion-eliminar-hover-proyectos: #b91c1c;
+  --accion-eliminar-bg-hover-proyectos: rgba(220, 38, 38, 0.1);
+  --accion-eliminar-proyectos-dark: #f87171;
+  --accion-eliminar-hover-proyectos-dark: #fca5a5;
+  --accion-eliminar-bg-hover-proyectos-dark: rgba(220, 38, 38, 0.2);
+
+  /* Modal */
+  --modal-close-hover-proyectos: #f3f4f6;
+  --modal-close-hover-proyectos-dark: #374151;
+  --modal-close-icon-proyectos: #6b7280;
+
+  --modal-btn-cancelar-proyectos: #d1d5db;
+  --modal-btn-cancelar-hover-proyectos: #9ca3af;
+  --modal-btn-cancelar-text-proyectos: #374151;
+  --modal-btn-cancelar-proyectos-dark: #4b5563;
+  --modal-btn-cancelar-hover-proyectos-dark: #6b7280;
+  --modal-btn-cancelar-text-proyectos-dark: #ffffff;
+
+  --modal-btn-crear-proyectos: #0AA4A4;
+  --modal-btn-crear-hover-proyectos: #087A7A;
+  --modal-btn-crear-text-proyectos: #ffffff;
+
+  /* Inputs y Labels */
+  --input-border-proyectos: #d1d5db;
+  --input-border-dark-proyectos: #4b5563;
+  --input-bg-proyectos: #ffffff;
+  --input-bg-dark-proyectos: #374151;
+  --input-text-proyectos: #111827;
+  --input-text-dark-proyectos: #ffffff;
+  --input-focus-ring-proyectos: #0AA4A4;
+
+  --label-text-proyectos: #374151;
+  --label-text-dark-proyectos: #d1d5db;
+
+  /* Preview Panel */
+  --preview-bg-proyectos: rgba(10, 164, 164, 0.1);
+  --preview-border-proyectos: #0AA4A4;
+  --preview-bg-dark-proyectos: rgba(10, 164, 164, 0.15);
+
+  /* Progress Bar */
+  --progress-bg-proyectos: #e5e7eb;
+  --progress-bg-dark-proyectos: #374151;
+
+  /* Colores Específicos del Módulo de Horarios (Teal/Cyan Theme) */
+  --color-primary-horarios: #0AA4A4;
+  --color-primary-dark-horarios: #087A7A;
+  --color-secondary-horarios: #08C6B6;
+
+  /* Badges - Estados de Asistencia */
+  --badge-present-bg-horarios: #d1fae5;
+  --badge-present-text-horarios: #065f46;
+  --badge-present-bg-dark-horarios: #064e3b;
+  --badge-present-text-dark-horarios: #a7f3d0;
+
+  --badge-finished-bg-horarios: #e0f2fe;
+  --badge-finished-text-horarios: #0369a1;
+  --badge-finished-bg-dark-horarios: #0c4a6e;
+  --badge-finished-text-dark-horarios: #bae6fd;
+
+  /* Badges - Estados de Horas Extra */
+  --badge-pending-bg-horarios: #fef3c7;
+  --badge-pending-text-horarios: #92400e;
+  --badge-pending-bg-dark-horarios: #78350f;
+  --badge-pending-text-dark-horarios: #fde68a;
+
+  --badge-approved-bg-horarios: #ccfbf1;
+  --badge-approved-text-horarios: #115e59;
+  --badge-approved-bg-dark-horarios: #134e4a;
+  --badge-approved-text-dark-horarios: #99f6e4;
+
+  --badge-rejected-bg-horarios: #fee2e2;
+  --badge-rejected-text-horarios: #991b1b;
+  --badge-rejected-bg-dark-horarios: #7f1d1d;
+  --badge-rejected-text-dark-horarios: #fecaca;
+
+  /* Botones */
+  --btn-clock-in-bg-horarios: #10b981;
+  --btn-clock-in-hover-horarios: #059669;
+  --btn-clock-out-bg-horarios: #ef4444;
+  --btn-clock-out-hover-horarios: #dc2626;
+
+  --btn-action-bg-horarios: #0AA4A4;
+  --btn-action-hover-horarios: #087A7A;
+  --btn-action-text-horarios: #ffffff;
+
+  /* Modal */
+  --modal-header-border-horarios: #0AA4A4;
+
+  /* Inputs */
+  --input-focus-ring-horarios: #0AA4A4;
+
+  /* Clock Display */
+  --clock-display-bg-horarios: #f0fdfa;
+  --clock-display-bg-dark-horarios: #134e4a;
+  --clock-display-text-horarios: #115e59;
+  --clock-display-text-dark-horarios: #ccfbf1;
+
+  /* Calendar Colors */
+  --calendar-complete-bg: #d1fae5;
+  --calendar-complete-text: #065f46;
+  --calendar-incomplete-bg: #fee2e2;
+  --calendar-incomplete-text: #dc2626;
+  /* Red-600 */
+  --calendar-overtime-bg: #fef9c3;
+  /* Yellow-100 */
+  --calendar-overtime-text: #b45309;
+  /* Amber-700 */
+  /* Colores Específicos del Módulo de Trabajadores */
+  /* MOVIDOS A: MODULOS/trabajadoresbtw/trabajadores-theme.css */
+
+}
+
+/* ============================================
+   MODO OSCURO
+   ============================================ */
+body.dark-mode {
+  /* Fondos - Modo Oscuro */
+  --bg-white: #1e293b;
+  --bg-light: #0f172a;
+  --bg-gray: #334155;
+
+  /* Textos - Modo Oscuro */
+  --text-dark: #f1f5f9;
+  --text-gray: #cbd5e1;
+  --text-light: #94a3b8;
+
+  /* Bordes y Sombras - Modo Oscuro */
+  --border-color: #334155;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* ============================================
+   ESTILOS GLOBALES BASE
+   ============================================ */
+/* Body styles moved to main.css to prevent conflicts */
+
+/* Scrollbar Global */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-light);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-gray);
+}
+
+/* ============================================
+   Colores Específicos del Gestor de Módulos
+   ============================================ */
+:root {
+  --bg-manager-card: var(--bg-white);
+  --bg-manager-card-dark: #1f2937;
+
+  --text-manager-title: var(--text-dark);
+  --text-manager-title-dark: var(--bg-white);
+
+  --text-manager-subtitle: var(--text-gray);
+  --text-manager-subtitle-dark: var(--text-light);
+
+  --border-manager-card: var(--border-color);
+  --border-manager-card-dark: #374151;
+
+  /* Separators */
+  --separator-manager-header: rgba(0, 0, 0, 0.1);
+  --separator-manager-header-dark: rgba(255, 255, 255, 0.1);
+  --separator-manager-row: var(--bg-gray);
+  --separator-manager-row-dark: rgba(255, 255, 255, 0.05);
+
+  /* Inputs & Filters */
+  --bg-manager-input: var(--bg-white);
+  --bg-manager-input-dark: #111827;
+  --text-manager-input: var(--text-dark);
+  --text-manager-input-dark: var(--text-white);
+  --border-manager-input: var(--border-color);
+  --border-manager-input-dark: #4b5563;
+
+  /* Badges - Light Mode (Solid) */
+  --badge-manager-purple-bg: #f3e8ff;
+  --badge-manager-purple-text: #7e22ce;
+  --badge-manager-blue-bg: #dbeafe;
+  --badge-manager-blue-text: #1d4ed8;
+  --badge-manager-gray-bg: #f3f4f6;
+  --badge-manager-gray-text: #374151;
+  --badge-manager-green-bg: #dcfce7;
+  --badge-manager-green-text: #15803d;
+
+  --badge-manager-purple-bg-dark: rgba(88, 28, 135, 0.4);
+  --badge-manager-purple-text-dark: #d8b4fe;
+}
+
+/* ============================================
+   Colores Específicos del Módulo de Logs
+   ============================================ */
+:root {
+  /* Layout */
+  --bg-logs-sidebar: var(--bg-white);
+  --bg-logs-sidebar-dark: #1f2937;
+  --bg-logs-terminal: #1e1e1e;
+  --bg-logs-terminal-header: #2d2d2d;
+
+  /* Text */
+  --text-logs-terminal: #d4d4d4;
+  --text-logs-timestamp: #569cd6;
+  --text-logs-meta: #858585;
+
+  /* Level Colors */
+  --log-level-info: #3b82f6;
+  --log-level-success: #10b981;
+  --log-level-warning: #f59e0b;
+  --log-level-error: #ef4444;
+  --log-level-debug: #a8a29e;
+
+  /* Buttons */
+  --btn-logs-refresh-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --btn-logs-refresh-hover: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+
+  --btn-logs-clear-bg: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  --btn-logs-clear-hover: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+
+  /* Badges */
+  --badge-logs-bg: #f3f4f6;
+  --badge-logs-text: #374151;
+  --badge-logs-bg-dark: #374151;
+  --badge-logs-text-dark: #d1d5db;
+}

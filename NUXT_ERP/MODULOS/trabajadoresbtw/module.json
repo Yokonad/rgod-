@@ -1,0 +1,12 @@
+{
+  "id": "trabajadoresbtw",
+  "name": "TRABAJADORES",
+  "description": "Gestión completa de trabajadores y empleados. Incluye registro manual, importación masiva desde Excel y control de documentación laboral.",
+  "version": "2.0.0",
+  "author": "LoonBac21 - Insent1208",
+  "icon": "users",
+  "gradient": "rgba(102, 126, 234, 1)",
+  "access_level": "user",
+  "enabled": true,
+  "route": "/modules/trabajadoresbtw"
+}

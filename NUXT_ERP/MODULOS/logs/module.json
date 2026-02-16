@@ -1,0 +1,12 @@
+{
+  "id": "logs",
+  "name": "LOGS DEL SISTEMA",
+  "description": "Visor centralizado de todos los eventos y registros del sistema. Permite monitorear actividad de usuarios, errores, advertencias y acciones en todos los módulos. Solo accesible para desarrolladores y administradores.",
+  "version": "1.0.0",
+  "author": "ByteWave Team",
+  "icon": "document-text",
+  "gradient": "rgba(99, 102, 241, 1)",
+  "access_level": "admin",
+  "enabled": true,
+  "route": "/modules/logs"
+}
